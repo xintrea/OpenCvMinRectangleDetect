@@ -1,0 +1,4 @@
+Scanning dependencies of target opencvstart
+[ 50%] Building CXX object CMakeFiles/opencvstart.dir/Main.cpp.o
+[100%] Linking CXX executable opencvstart
+[100%] Built target opencvstart
