@@ -45,10 +45,14 @@ void detect(cv::Mat &image)
         
         // Определение координат углов этого минимального прямоугольника
         cv::Point2f vertices[4];
-        box.points(vertices);
-        
-        for (int i = 0; i < 4; i++)
+        box.points(vertices); // В массив vertices засовываются точки углов минимального прямоугольника
+        for (int i = 0; i < 4; i++) {
            cv::line(image, vertices[i], vertices[(i+1)%4], cv::Scalar(0,255,0));
+           cout << "Min box verticle:" << vertices[i].x << " " << vertices[i].y << endl;
+        }   
+        cout << "Min box angle:" << box.angle << endl;
+        cout << "Min box mass center:" << box.center.x << " " << box.center.y << endl;
+        cout << "Min box size:" << box.size.width << " " << box.size.height << endl;
 
     }
 

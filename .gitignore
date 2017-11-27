@@ -1,0 +1,4 @@
+/CMakeFiles/*
+CMakeCache.txt
+/nbproject/*
+cmake_install.cmake
