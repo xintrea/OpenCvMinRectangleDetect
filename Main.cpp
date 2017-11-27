@@ -55,14 +55,10 @@ void detect(cv::Mat &image)
         cout << "Min box size:" << box.size.width << " " << box.size.height << endl;
 
     }
-
-    
     
     // показываем картинки
      cv::imshow("Binary", bin);
      cv::imshow("Detect", image);
-     
-     
      
      cv::waitKey();
 }
